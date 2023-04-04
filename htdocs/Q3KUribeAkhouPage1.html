@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html class="dark">
+	<head>
+		<title>StudyLab - Organizer</title>
+		<meta charset="UTF-8">
+		<meta name="author" content="Akhou Jhay A. Uribe">
+		<meta name="keywords" content="HTML, CSS, Javascript">
+		<meta name="revised" content="04/02/2023">
+		<link rel="stylesheet" href="../css/organizer.css" />
+		<link rel="stylesheet" href="../css/general.css" />
+		<link rel="icon" type="image/png" href="../mmfiles/imgs/header-studylab.png" />
+	</head>
+	<body>
+		<nav style="top: 0;">
+			<div class="logo">
+				<img src="../mmfiles/imgs/header-studylab.png" />
+				<h2>Study Lab</h2>
+			</div>
+			<ul style="gap: 0!important">
+				<li><a href="../index.html">Home</a></li>
+				<li><a href="Q3KUribeAkhouPage1.html">Organizer</a></li>
+				<li><a href="Q3KUribeAkhouPage2.html">Calculator</a></li>
+			</ul>
+		</nav>
+		<header>
+			<img src="../mmfiles/imgs/organizer/header-background.png" />
+		</header>
+		<div class="form-box" id="newForm">
+			<div class="card">
+				<form>
+					<div class="txt_field">
+						<input type="text" id="inputTitle" required />
+						<span></span>
+						<label>Title</label>
+					</div>
+					<div class="txt_field">
+						<textarea id="inputContent" cols="30" rows="10" required>
+						</textarea>
+					</div>
+					<div class="decision">
+						<div id="submitForm" onclick="implement()">Submit</div>
+						<div onclick="newFormClose()" id="cancelForm">
+							Cancel
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+		<main>
+			<div class="card dark-div">
+				<div class="flex">
+					<img
+						src="../mmfiles/imgs/organizer/flex-pfp.png"
+						alt=""
+						id="userPfp"
+					/>
+					<h1 class="text-3xl">Welcome User</h1>
+					<div
+						class="text-3xl ml-auto flex"
+						style="gap: 1rem"
+						id="dateToday"
+					>
+						<p class="card dark-div-2"></p>
+						<p class="card dark-div-2"></p>
+						<p class="card dark-div-2"></p>
+					</div>
+				</div>
+
+				<div class="reminders">
+					<div class="container">
+						<div class="important-notes dark-div-2">
+							<h1>Important</h1>
+							<div>
+								<ul>
+									<li>Math Test</li>
+								</ul>
+							</div>
+						</div>
+						<div class="card dark-div-2">
+							<h1 class="text-3xl" id="workTime">0:0:0</h1>
+						</div>
+					</div>
+
+					<div class="calendar dark-div-2">
+						<div class="days">
+							<div>
+								<p>Sunday</p>
+							</div>
+							<div>
+								<p>Monday</p>
+							</div>
+							<div>
+								<p>Tuesday</p>
+							</div>
+							<div>
+								<p>Wednesday</p>
+							</div>
+							<div>
+								<p>Thursday</p>
+							</div>
+							<div>
+								<p>Friday</p>
+							</div>
+							<div>
+								<p>Saturday</p>
+							</div>
+						</div>
+						<div class="dates">
+							<div></div>
+							<div></div>
+							<div></div>
+							<div></div>
+							<div></div>
+							<div></div>
+							<div class="card">
+								<p>1</p>
+							</div>
+							<div class="card">
+								<p>2</p>
+							</div>
+							<div class="card">
+								<p>3</p>
+							</div>
+							<div class="card">
+								<p>4</p>
+							</div>
+							<div class="card">
+								<p>5</p>
+							</div>
+							<div class="card">
+								<p>6</p>
+							</div>
+							<div class="card">
+								<p>7</p>
+							</div>
+							<div class="card">
+								<p>8</p>
+							</div>
+							<div class="card">
+								<p>9</p>
+							</div>
+							<div class="card">
+								<p>10</p>
+							</div>
+							<div class="card">
+								<p>11</p>
+							</div>
+							<div class="card">
+								<p>12</p>
+							</div>
+							<div class="card">
+								<p>13</p>
+							</div>
+							<div class="card">
+								<p>14</p>
+							</div>
+							<div class="card">
+								<p>15</p>
+							</div>
+							<div class="card">
+								<p>16</p>
+							</div>
+							<div class="card">
+								<p>17</p>
+							</div>
+							<div class="card">
+								<p>18</p>
+							</div>
+							<div class="card">
+								<p>19</p>
+							</div>
+							<div class="card">
+								<p>20</p>
+							</div>
+							<div class="card">
+								<p>21</p>
+							</div>
+							<div class="card">
+								<p>22</p>
+							</div>
+							<div class="card">
+								<p>23</p>
+							</div>
+							<div class="card">
+								<p>24</p>
+							</div>
+							<div class="card">
+								<p>25</p>
+							</div>
+							<div class="card">
+								<p>26</p>
+							</div>
+							<div class="card">
+								<p>27</p>
+							</div>
+							<div class="card">
+								<p>28</p>
+							</div>
+							<div class="card">
+								<p>29</p>
+							</div>
+							<div class="card">
+								<p>30</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="card dark-div-2" id="task">
+					<div id="addRemove">
+						<button id="addTask" onclick="add()">
+							<img src="../mmfiles/imgs/organizer/add.png"/>
+						</button>
+						<button id="removeTask" onclick="remove()">
+							<img src="../mmfiles/imgs/organizer/minus.png"/>
+						</button>
+					</div>
+					<div class="tasks flex dark-div" id="task-box"></div>
+				</div>
+			</div>
+		</main>
+		<footer>
+			<div class="Contact">
+				<div class="logo">
+					<img src="../mmfiles/imgs/header-studylab.png" />
+					<h2>Study Lab</h2>
+				</div>
+				<p>
+					Need contact? Call 09178039211, or you can send an email to
+					khouuriberg@gmail.com. <br />
+					Lorem ipsum dolor sit amet consectetur adipisicing elit.
+					Delectus cumque, sed eos ducimus laboriosam consequatur.
+				</p>
+			</div>
+			<div class="Sitemap">
+				<h1>Sitemap</h1>
+				<ul style="gap: 0; margin: 0!important;;">
+					<li>Home</li>
+					<li>Organizer</li>
+					<li>Math</li>
+					<li>Physics</li>
+					<li>Chemistry</li>
+					<li>Feedback</li>
+				</ul>
+			</div>
+			<div class="Accounts">
+				<h1>Accounts</h1>
+				<ul>
+					<li>
+						<a
+							class="sprite"
+							id="fbsprite"
+							href="https://www.facebook.com/khouuribe/"
+						></a>
+					</li>
+					<li>
+						<a
+							class="sprite"
+							id="twtsprite"
+							href="https://twitter.com/bukhou_shake"
+						></a>
+					</li>
+					<li>
+						<a
+							class="sprite"
+							id="mailsprite"
+							href="https://google.mail.com"
+						></a>
+					</li>
+					<li>
+						<a
+							class="sprite"
+							id="ytsprite"
+							href="https://www.youtube.com/channel/UCwOoEl0vZ6RyvIPDHwYIJug"
+						></a>
+					</li>
+				</ul>
+			</div>
+		</footer>
+		<script src="../js/page1.js"></script>
+	</body>
+</html>

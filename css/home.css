@@ -1,0 +1,254 @@
+header {
+	--image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200' viewBox='0 0 800 800'%3E%3Cg fill='none' stroke='%23000000' stroke-width='3.7'%3E%3Cpath d='M769 229L1037 260.9M927 880L731 737 520 660 309 538 40 599 295 764 126.5 879.5 40 599-197 493 102 382-31 229 126.5 79.5-69-63'/%3E%3Cpath d='M-31 229L237 261 390 382 603 493 308.5 537.5 101.5 381.5M370 905L295 764'/%3E%3Cpath d='M520 660L578 842 731 737 840 599 603 493 520 660 295 764 309 538 390 382 539 269 769 229 577.5 41.5 370 105 295 -36 126.5 79.5 237 261 102 382 40 599 -69 737 127 880'/%3E%3Cpath d='M520-140L578.5 42.5 731-63M603 493L539 269 237 261 370 105M902 382L539 269M390 382L102 382'/%3E%3Cpath d='M-222 42L126.5 79.5 370 105 539 269 577.5 41.5 927 80 769 229 902 382 603 493 731 737M295-36L577.5 41.5M578 842L295 764M40-201L127 80M102 382L-261 269'/%3E%3C/g%3E%3Cg fill='%233A5055'%3E%3Ccircle cx='769' cy='229' r='12'/%3E%3Ccircle cx='539' cy='269' r='12'/%3E%3Ccircle cx='603' cy='493' r='12'/%3E%3Ccircle cx='731' cy='737' r='12'/%3E%3Ccircle cx='520' cy='660' r='12'/%3E%3Ccircle cx='309' cy='538' r='12'/%3E%3Ccircle cx='295' cy='764' r='12'/%3E%3Ccircle cx='40' cy='599' r='12'/%3E%3Ccircle cx='102' cy='382' r='12'/%3E%3Ccircle cx='127' cy='80' r='12'/%3E%3Ccircle cx='370' cy='105' r='12'/%3E%3Ccircle cx='578' cy='42' r='12'/%3E%3Ccircle cx='237' cy='261' r='12'/%3E%3Ccircle cx='390' cy='382' r='12'/%3E%3C/g%3E%3C/svg%3E");
+	background-color: #241f2a;
+    background-image: var(--image);
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	flex-direction: row;
+	align-items: stretch;
+	font-family: "Poppins", sans-serif;
+}
+
+header .custom-shape-divider-bottom-1679533360 {
+	position: absolute;
+	bottom: 0px;
+	left: 0;
+	width: 100%;
+	overflow: hidden;
+	line-height: 0;
+	transform: rotate(180deg);
+}
+
+header .custom-shape-divider-bottom-1679533360 svg {
+	position: relative;
+	display: block;
+	width: calc(117% + 1.3px);
+	height: 229px;
+	transform: rotateY(180deg);
+}
+
+header .custom-shape-divider-bottom-1679533360 .shape-fill {
+	fill: #d7d7d7;
+}
+
+header .heading {
+	position: relative;
+	width: 60%;
+	display: flex;
+	justify-content: center;
+	top: 30vh;
+}
+
+header .heading p {
+	color: white;
+}
+
+header .heading #title {
+	font-size: 90px;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+header .heading #desc {
+	font-size: 25px;
+}
+
+header .heading #title span {
+	font-size: 40px;
+	padding: 0;
+}
+
+header .img-container {
+	width: 55%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+header .img-container img {
+	width: 350px;
+	border-radius: 30px;
+	position: relative;
+	bottom: 5%;
+}
+
+header #arrow {
+	width: 50px;
+	position: absolute;
+	bottom: 15%;
+	right: 49%;
+	transition: 0.3s;
+}
+
+header #arrow:hover {
+	transform: scale(130%);
+}
+
+.custom-shape-divider-top-1679549442 {
+	position: relative;
+	left: 0;
+	width: 100%;
+	overflow: hidden;
+	line-height: 0;
+}
+
+.custom-shape-divider-top-1679549442 svg {
+	position: relative;
+	display: block;
+	width: calc(100% + 1.3px);
+	height: 153px;
+}
+
+.custom-shape-divider-top-1679549442 .shape-fill {
+	fill: #d7d7d7;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+    margin: 3rem 0 0 0;
+	height: 100%;
+    gap: 8rem
+}
+
+main .container-calculator {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	gap: 30px;
+}
+
+main .container-calculator #calculator-intro {
+	color: white;
+	font-family: "Poppins";
+	font-size: 60px;
+	font-weight: 600;
+	width: 100%;
+	text-align: center;
+}
+
+main .container-calculator .box {
+    position: relative;
+    aspect-ratio: 1;
+	height: 300px;
+	color: white;
+	background-color: hsl(0, 0%, 13%);
+	transition: 0.2s;
+	border-radius: 10px;
+    overflow: hidden;
+}
+
+main .container-calculator .box:hover {
+	transform: scale(1.05);
+	border: 1px solid white;
+}
+
+main .container-calculator .box img {
+    object-fit: cover;
+    width: 100%;
+	position: absolute;
+	transition: opacity 0.4s ease;
+	z-index: 3;
+	border-radius: 10px;
+}
+
+main .container-calculator .box img:hover {
+	opacity: 0;
+}
+
+main .container-calculator .box .info {
+	position: relative;
+	z-index: 2;
+	width: 100%;
+	height: 100%;
+}
+
+main .container-calculator div .info p,
+main .container-calculator div .info li,
+main .container-calculator div .info h2 {
+	font-family: "Inconsolata";
+	margin-top: 5px;
+	margin-left: 10px;
+}
+
+main .container-calculator div .info ul {
+    list-style: none;
+}
+
+main .container-calculator #math .info h2 {
+	color: green;
+}
+
+main .container-calculator #physics .info h2 {
+	color: red;
+}
+
+main .container-calculator #chemistry .info h2 {
+	color: blue;
+}
+
+main .container-organizer .info #main-idea {
+	color: white;
+}
+
+main .container-organizer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    gap: 5rem;
+    width: 70vw;
+}
+
+main .container-organizer .info {
+	width: 100%;
+}
+
+main .container-organizer .info #main-idea {
+	color: white;
+	font-family: "Poppins";
+	font-size: 50px;
+	font-weight: 600;
+}
+
+main .container-organizer .info #description {
+    margin-top: 1rem;
+    color: white;
+    font-family: "poppins";
+    font-size: 1.1rem;
+    text-align: justify;
+}
+
+main .container-organizer .video {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+main .container-organizer .video video {
+	width: 400px;
+    border-radius: 20px;
+}
+
+main .container-organizer .video button {
+	margin: 10px;
+	padding: 15px;
+	background-color: #62c0fa;
+	border-radius: 10px;
+	width: 120px;
+	transition: 0.2s;
+}
+
+main .container-organizer .video button a{
+	text-decoration: none;
+	color: white;
+}
+main .container-organizer .video button:hover{
+	background-color: #006387;
+	transform: scale(1.05);
+}

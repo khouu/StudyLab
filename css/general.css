@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css?family=BIZ UDPGothic");
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #19171c;
+	min-height: 100vh;
+	overflow-x: hidden;
+}
+
+nav {
+	margin-right: 20px;
+	font-family: Armata;
+	width: 100%;
+	height: 80px;
+	display: flex;
+	justify-content: right;
+	align-items: center;
+	background-color: #1b1a1d;
+	z-index: 5;
+	position: fixed;
+	top: -100px;
+	left: 0;
+	transition: top 0.3s ease-in-out;
+	font-family: "Poppins";
+}
+
+nav ul {
+	list-style-type: none;
+	float: right;
+}
+
+nav li {
+	padding-left: 10px;
+	margin: 0 10px 0 10px;
+	float: left;
+}
+
+nav a {
+	padding: 10px;
+	text-decoration: none;
+	font-size: 18px;
+	transition: 0.7s;
+	color: #fff;
+	font-weight: 500;
+	transition: 0.2s;
+}
+
+nav a:hover{
+	color: gray;
+	
+}
+
+footer {
+	display: flex;
+	gap: 4rem;
+	color: white;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	font-weight: 600;
+	padding: 4rem;
+	margin: 0;
+	box-sizing: border-box;
+	min-height: 20vh;
+	width: 100vw;
+	background-color: #241f2a;
+}
+
+footer ul {
+	list-style-type: none;
+}
+
+footer .Contact {
+	display: flex;
+	align-items: flex-start;
+	flex-direction: column;
+	padding-right: 20rem;
+}
+
+footer .Contact p {
+	margin-top: 4rem;
+	margin-left: 2rem;
+	text-align: justify;
+}
+
+footer .Contact * {
+	width: 100%;
+}
+
+footer .Sitemap {
+	margin-left: auto;
+	padding-left: 4rem;
+	border-left: 1px #eee solid;
+}
+
+footer .Sitemap,
+footer .Accounts {
+	width: 20rem;
+}
+
+footer .Sitemap h1,
+footer .Accounts h1 {
+	margin-bottom: 2rem;
+}
+
+footer ul,
+footer ol {
+	display: flex;
+	flex-direction: column;
+}
+
+footer ul li {
+	padding-left: 1rem;
+	position: relative;
+	height: 32px;
+	display: flex;
+	flex-direction: column;
+}
+
+footer ul li:hover {
+	opacity: 0.3;
+}
+
+footer .Accounts .sprite {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	transform: scale(32%) translate(-50%, -50%);
+	filter: invert(1);
+	top: -50%;
+	left: -1.66%;
+	transition: 0.3s;
+}
+
+#fbsprite {
+	background: url("../mmfiles/imgs/footer-sprites.png") no-repeat -40px -40px;
+}
+
+#twtsprite {
+	background: url("../mmfiles/imgs/footer-sprites.png") no-repeat -160px -40px;
+}
+
+#mailsprite {
+	background: url("../mmfiles/imgs/footer-sprites.png") no-repeat -520px -160px;
+}
+
+#ytsprite {
+	background: url("../mmfiles/imgs/footer-sprites.png") no-repeat -160px -160px;
+}
+
+.logo {
+	margin-right: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	margin-left: 2rem;
+}
+
+.logo img {
+	width: 60px;
+}
+
+footer .logo {
+	width: 20vw;
+}
+
+.form-box {
+	opacity: 0;
+	pointer-events: none;
+	width: 50%;
+	z-index: 50;
+	display: flex;;
+	position: fixed;
+	top: 50vh;
+	left: 50vw;
+	transform: translate(-50%, -50%);
+	isolation: isolate;
+    transition: all 200ms;
+}
+
+.form-box .card {
+	background-color: #19171c;
+}
+
+.form-box::before {
+	position: fixed;
+	content: "a";
+	color: transparent;
+	width: 999vw;
+	height: 999vh;
+    top: -100vh;
+    left: -100vw;
+	backdrop-filter: blur(1rem);
+	z-index: -9999;
+}

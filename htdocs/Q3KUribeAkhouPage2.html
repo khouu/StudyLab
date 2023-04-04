@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html class="dark">
+    <head>
+        <title>StudyLab - Calculator</title>
+        <meta charset="UTF-8">
+		<meta name="author" content="Akhou Jhay A. Uribe">
+		<meta name="keywords" content="HTML, CSS, Javascript">
+		<meta name="revised" content="04/02/2023">
+		<link rel="stylesheet" href="../css/calculator.css" />
+		<link rel="stylesheet" href="../css/general.css" />
+        <link rel="icon" type="image/png" href="../mmfiles/imgs/header-studylab.png" />
+    </head>
+    <body>
+        <nav style="top: 0;">
+			<div class="logo">
+				<img src="../mmfiles/imgs/header-studylab.png" />
+				<h2>Study Lab</h2>
+			</div>
+			<ul>
+				<li><a href="../index.html">Home</a></li>
+				<li><a href="Q3KUribeAkhouPage1.html">Organizer</a></li>
+				<li><a href="Q3KUribeAkhouPage2.html">Calculator</a></li>
+			</ul>
+		</nav>
+        <header>
+            <img src="../mmfiles/imgs/organizer/header-background.png" />
+        </header>
+        <main>
+            <div class="container">
+                <div class="links">
+                    <div class="btn" onclick="mathReveal()">
+                        Math
+                    </div>
+                    <div class="btn" onclick="chemReveal()">
+                        Chemistry
+                    </div>
+                    <div class="btn">
+                        Physics
+                    </div>
+                </div>
+                <div class="output">
+                    <div class="calcuCont">
+                        <div id="scical">
+                            <div class="display">
+                                <input type="text" id="result" placeholder="0">
+                            </div>
+                            <div class="buttons">
+                                <button onclick="clearDisplay()">C</button>
+                                <button onclick="backspace()">CE</button>
+                                <button onclick="insert('**')">^</button>
+                                <button onclick="insert('Math.PI')">π</button>
+                                <button onclick="insert('(')">(</button>
+                                <button onclick="insert(')')">)</button>
+                                <button onclick="insert('Math.LN')">ln</button>
+                                <button onclick="insert('Math.E')">e</button>                                
+                                <button onclick="insert('9')">9</button>
+                                <button onclick="insert('8')">8</button>
+                                <button onclick="insert('7')">7</button>
+                                <button onclick="insert('6')">6</button>
+                                <button onclick="insert('5')">5</button>
+                                <button onclick="insert('4')">4</button>
+                                <button onclick="insert('3')">3</button>
+                                <button onclick="insert('2')">2</button>
+                                <button onclick="insert('1')">1</button>
+                                <button onclick="insert('0')">0</button>
+                                <button onclick="insert('.')">.</button>
+                                <button onclick="calculate()">=</button>
+                                <button onclick="insert('-')">-</button>
+                                <button onclick="insert('+')">+</button>
+                                <button onclick="insert('*')">x</button>
+                                <button onclick="insert('/')">÷</button>
+                            </div>
+                        </div>
+                        <div id="chemcal">
+                            <form id="chem-input">
+                                <label>Reactants:</label>
+                                <input type="text" id="reactants" placeholder="Enter reactants">
+                                <label>Products:</label>
+                                <input type="text" id="products" placeholder="Enter products">
+                                <button type="button" onclick="balance()">Check</button>
+                            </form>
+                            <div class="equation" id="equation"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script src="../js/page2.js"></script>
+        </main>
+        <footer>
+			<div class="Contact">
+				<div class="logo">
+					<img src="../mmfiles/imgs/header-studylab.png" />
+					<h2>Study Lab</h2>
+				</div>
+				<p>
+					Need contact? Call 09178039211, or you can send an email to
+					khouuriberg@gmail.com. <br />
+					Lorem ipsum dolor sit amet consectetur adipisicing elit.
+					Delectus cumque, sed eos ducimus laboriosam consequatur.
+				</p>
+			</div>
+			<div class="Sitemap">
+				<h1>Sitemap</h1>
+				<ul>
+					<li>Home</li>
+					<li>Organizer</li>
+					<li>Math</li>
+					<li>Physics</li>
+					<li>Chemistry</li>
+					<li>Feedback</li>
+				</ul>
+			</div>
+			<div class="Accounts">
+				<h1>Accounts</h1>
+				<ul>
+					<li>
+						<a
+							class="sprite"
+							id="fbsprite"
+							href="https://www.facebook.com/khouuribe/"
+						></a>
+					</li>
+					<li>
+						<a
+							class="sprite"
+							id="twtsprite"
+							href="https://twitter.com/bukhou_shake"
+						></a>
+					</li>
+					<li>
+						<a
+							class="sprite"
+							id="mailsprite"
+							href="https://google.mail.com"
+						></a>
+					</li>
+					<li>
+						<a
+							class="sprite"
+							id="ytsprite"
+							href="https://www.youtube.com/channel/UCwOoEl0vZ6RyvIPDHwYIJug"
+						></a>
+					</li>
+				</ul>
+			</div>
+		</footer>
+    </body>
+</html>

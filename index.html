@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>StudyLab - Home Page</title>
+		<meta charset="UTF-8">
+		<meta name="author" content="Akhou Jhay A. Uribe">
+		<meta name="keywords" content="HTML, CSS, Javascript">
+		<meta name="revised" content="04/02/2023">
+		<link rel="stylesheet" href="css/general.css" type="text/css" />
+		<link rel="stylesheet" href="css/home.css" type="text/css" />
+		<link rel="icon" type="image/png" href="mmfiles/imgs/header-studylab.png" />
+	</head>
+	<body>
+		<nav>
+			<div class="logo">
+				<img src="mmfiles/imgs/header-studylab.png" />
+				<h2>Study Lab</h2>
+			</div>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="htdocs/Q3KUribeAkhouPage1.html">Organizer</a></li>
+				<li><a href="htdocs/Q3KUribeAkhouPage2.html">Calculator</a></li>
+			</ul>
+		</nav>
+		<header>
+			<div class="heading">
+				<div class="word-contain">
+					<p id="title">Study Lab</p>
+					<p id="desc">
+						Unlock Your Academic Potential with Study Lab:<br />
+						your all-in-one website for your school life
+					</p>
+				</div>
+			</div>
+			<div class="img-container"><img src="mmfiles/imgs/header-studylab.png" /></div>
+			<div class="custom-shape-divider-bottom-1679533360">
+				<svg
+					data-name="Layer 1"
+					xmlns="http://www.w3.org/2000/svg"
+					viewBox="0 0 1200 120"
+					preserveAspectRatio="none"
+				>
+					<path
+						d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+						opacity=".25"
+						class="shape-fill"
+					></path>
+					<path
+						d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+						opacity=".5"
+						class="shape-fill"
+					></path>
+					<path
+						d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
+						class="shape-fill"
+					></path>
+				</svg>
+			</div>
+			<img onclick="scrollPage()" id="arrow" src="mmfiles/imgs/home/header-droparrow.png" />
+		</header>
+		<div class="custom-shape-divider-top-1679549442">
+			<svg
+				data-name="Layer 1"
+				xmlns="http://www.w3.org/2000/svg"
+				viewBox="0 0 1200 120"
+				preserveAspectRatio="none"
+			>
+				<path
+					d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+					opacity=".25"
+					class="shape-fill"
+				></path>
+				<path
+					d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+					opacity=".5"
+					class="shape-fill"
+				></path>
+				<path
+					d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
+					class="shape-fill"
+				></path>
+			</svg>
+		</div>
+		<main>
+			<div class="container-calculator">
+				<p id="calculator-intro">The best calculator has arrived</p>
+				<!--Unfortunately wasn't able to do everything here except the basic calculator due to time constraints-->
+				<div class="box" id="math" onclick="toCalcu()">
+					<img src="mmfiles/imgs/home/main-math.png" />
+					<div class="info">
+						<h2>Mathematics</h2>
+						<br/>
+						<p>This calculator offers the following:</p>
+						<ul>
+							<li>Logarithmic Function</li>
+							<li>Exponential Function</li>
+							<li>Graphing</li>
+							<li>Basic Calculations</li>
+						</ul>
+					</div>
+				</div>
+				<div class="box" id="chemistry" onclick="toCalcu()">
+					<img src="mmfiles/imgs/home/main-chem.png" />
+					<div class="info">
+						<h2>Chemistry</h2>
+						<br/>
+						<p>This calculator offers the following:</p>
+						<ul>
+							<li>Balancing Equations</li>
+							<li>Stoichometry</li>
+							<li>Ideals Gas</li>
+							<li>Reduction and Oxidation</li>
+							<li>Partial Pressure</li>
+						</ul>
+					</div>
+				</div>
+				<div class="box" id="physics" onclick="toCalcu()">
+					<img src="mmfiles/imgs/home/main-physics.png" />
+					<div class="info">
+						<h2>Physics</h2>
+						<br/>
+						<p>This calculator offers the following:</p>
+						<ul>
+							<li>Torque</li>
+							<li>Kepler's Laws</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="container-organizer">
+				<div>
+					<div class="info">
+						<p id="main-idea">Organize your school life in one website!</p>
+						<p id="description">
+							Organizing your school life on one website can be a convenient and efficient way to manage
+							your schedule and stay on top of assignments. You can use the website to keep track of due
+							dates, set reminders, and even collaborate with classmates. By having all of your
+							school-related information in one place, you can reduce the risk of forgetting important
+							tasks or deadlines. 
+						</p>
+					</div>
+				</div>
+				<div class="video">
+					<video src="mmfiles/video/main-organize.mp4" autoplay muted loop>
+						Your browser does not support the video tag.
+					</video>
+
+					<button> 
+						<a href="htdocs/Q3KUribeAkhouPage1.html">Try it Now!</a>
+					</button>
+				</div>
+			</div>
+			<footer>
+				<div class="Contact">
+					<div class="logo">
+						<img src="mmfiles/imgs/header-studylab.png" />
+						<h2>Study Lab</h2>
+					</div>
+					<p>
+						Need contact? Call 09178039211, or you can send an email to khouuriberg@gmail.com. <br/>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus cumque, sed eos ducimus
+						laboriosam consequatur.
+					</p>
+				</div>
+				<div class="Sitemap">
+					<h1>Sitemap</h1>
+					<ul>
+						<li>Home</li>
+						<li>Organizer</li>
+						<li>Math</li>
+						<li>Physics</li>
+						<li>Chemistry</li>
+						<li>Feedback</li>
+					</ul>
+				</div>
+				<div class="Accounts">
+					<h1>Accounts</h1>
+					<ul>
+						<li><a class="sprite" id="fbsprite" href="https://www.facebook.com/khouuribe/"></a></li>
+						<li><a class="sprite" id="twtsprite" href="https://twitter.com/bukhou_shake"></a></li>
+						<li><a class="sprite" id="mailsprite" href="https://google.mail.com"></a></li>
+						<li>
+							<a
+								class="sprite"
+								id="ytsprite"
+								href="https://www.youtube.com/channel/UCwOoEl0vZ6RyvIPDHwYIJug"
+							></a>
+						</li>
+					</ul>
+				</div>
+			</footer>
+		</main>
+		<script src="js/home.js"></script>
+	</body>
+</html>
